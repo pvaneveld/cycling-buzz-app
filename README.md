@@ -1,24 +1,23 @@
-# cycling-buzz-app
+## Cycling buzz app
 
-## Project setup
-```
-npm install
-```
+### :link: Where
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Project can be found [here](https://cycling-buzz-app.herokuapp.com/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### :mag: What?
 
-### Lints and fixes files
-```
-npm run lint
-```
+A timeline with cycling news headlines from my personal favorite cyclists.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### :question: Why
+
+This is a learning project to fiddle around with some technologies i hadn't used before:
+- vue apollo
+- tailwind
+
+### :wrench: How
+
+The main parts of the stack are as follows:
+
+- `Vue`: framework of choice.
+- `tailwind`: css util library.
+- `apollo`: platform for building an graphQL API.
