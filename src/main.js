@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 Vue.filter('dateFormat', function (date) {
   const jsDate = new Date(date);
 
-  return `${leadingZero(jsDate.getDay())}-${leadingZero(jsDate.getMonth())}-${jsDate.getFullYear()}`;
+  return `${leadingZero(jsDate.getDate())}-${leadingZero(jsDate.getMonth() + 1)}-${jsDate.getFullYear()}`;
 })
 
 const leadingZero = (date) => {

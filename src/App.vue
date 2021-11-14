@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <main class="max-w-4xl h-6 my-0 mx-auto flex flex-col">
+    <main class="max-w-4xl h-6 my-0 mx-auto flex flex-col px-4">
       <ApolloQuery :query="require('./graphql/Articles.gql')">
         <template slot-scope="{ result: { loading, error, data } }">
           <!-- Loading -->

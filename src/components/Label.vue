@@ -8,7 +8,8 @@
       bg-yellow-300
       hover:bg-gray-500
       duration-300
-      text-s
+      md:text-sm
+      text-xs
       font-bold
       mr-1
       md:mr-2
