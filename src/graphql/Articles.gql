@@ -1,0 +1,14 @@
+query Articles($orderBy: ArticlesOrderByInput = {published: desc}) {
+  articles(orderBy: $orderBy) {
+    id
+    published
+    headline
+    url
+    medium
+    cyclist {
+      id,
+      firstName,
+      lastName
+    }
+  }
+}

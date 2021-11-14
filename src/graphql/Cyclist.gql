@@ -1,0 +1,6 @@
+query Cyclist($cyclistId: Int) {
+  cyclist(id: $cyclistId) {
+    firstName
+    lastName
+  }
+}

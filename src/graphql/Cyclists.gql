@@ -1,5 +1,0 @@
-query Query {
-  cyclists {
-    id
-  }
-}
