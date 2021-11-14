@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center">
-    <span class="bg-gray-600 text-white py-1 px-2 rounded mr-5">{{
+    <span class="bg-gray-600 text-white py-1 px-2 rounded mr-5 w-28 text-center">{{
       article.published | dateFormat
     }}</span>
     <div class="flex border-yellow-300 border-l-4 py-5 pl-10 relative">
