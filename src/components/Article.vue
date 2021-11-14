@@ -5,7 +5,7 @@
     }}</span>
     <div class="flex border-yellow-300 border-l-4 py-5 pl-10 relative">
       <div class="w-3 h-3 bg-yellow-300 absolute -left-2 top-1/2 dot"></div>
-      <div>
+      <div class="max-w-lg">
         <Label
           v-for="cyclist in sortById(article.cyclist)"
           :text="cyclist | cyclistName"
@@ -16,7 +16,6 @@
           target="_blank"
           class="
             hover:underline
-            max-w-lg
             bg-gray-100
             rounded
             px-4

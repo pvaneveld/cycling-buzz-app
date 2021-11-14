@@ -6,8 +6,16 @@ import './assets/tailwind.css'
 Vue.config.productionTip = false
 
 Vue.filter('dateFormat', function (date) {
-  return new Date(date).toLocaleDateString();
+  const jsDate = new Date(date);
+
+  return `${leadingZero(jsDate.getDay())}-${leadingZero(jsDate.getMonth())}-${jsDate.getFullYear()}`;
 })
+
+const leadingZero = (date) => {
+  const dateAsString = date.toString();
+
+  return dateAsString.length === 1 ? '0' + dateAsString : dateAsString;
+}
 
 Vue.filter('cyclistName', function ({ firstName, lastName }) {
   return `${firstName} ${lastName}`;
